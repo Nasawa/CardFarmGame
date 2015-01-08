@@ -1,0 +1,217 @@
+<html>
+<style type='text/css'>
+body
+{
+	background-image:url('img/papyrus.jpg');
+}
+.charasideimg
+    {
+      position:relative;
+      top:20;
+    }
+    .apparel
+    {
+      width: 64px;
+      height:64px;
+    }
+	.pushed
+    {
+      background-color: rgba(0, 0, 0, .1);
+      border-radius: 8px;
+      border-color: #DCCB9E;
+      border-style: inset;
+      border-width: 2px;
+    }
+    .pushed2
+    {
+      border-radius: 8px;
+      border-color: #DCCB9E;
+      border-style: inset;
+      border-width: 2px;
+    }
+    .footerdiv
+    {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 130px;
+      background-image: url('img/papyrus.jpg');
+      z-index: 150;
+    }
+    .charasideleft
+    {
+      position: absolute;
+	  left:35px;
+      top:50px;
+      width:30%;
+      height:20%;
+    }
+	.categories
+	{
+		top: 25%;
+		position:absolute;
+		left:35px;
+		width:30%;
+		height:59%;
+	}
+	.category
+	{
+		width:75%;
+		height:24%;
+		margin: 2px;
+		border-radius:10px;
+		background-color:rgba(0,0,255,0.2);
+		vertical-align:bottom;
+		color:rgb(255,255,255);
+		font-family:Candara, Arial, sans;
+		font-size:xx-large;
+		text-align:right;
+		position:relative;
+	}
+	.categorytext
+	{
+		position:absolute;
+		bottom:0px;
+		right:0px;
+		color:rgb(0,0,255);
+	}
+	.category:hover
+	{
+		background-color:rgba(255,0,0,0.2);
+	}
+	 .top1
+    {
+	  position:relative;
+      top:0;
+      height:20%;
+      margin-left:33.33%;
+	  margin-right:35px;
+    }
+    .bottom1
+    {
+      bottom:0;
+      height:60%;
+      margin-left:33.33%;
+	  margin-right:35px;
+    }
+	.nameinput
+	{
+		position:relative;
+		background-color:rgba(0,0,0,0.5);
+		top:5px;
+		width: 80%;
+		height: 40%;
+		font-size:xx-large;
+		text-align:center;
+		font-family:Candara, Arial, sans;
+		border-radius:8px;
+		color:rgb(255,255,255);
+	}
+	.farminput
+	{
+		position:relative;
+		background-color:rgba(0,0,0,0.5);
+		top:10px;
+		width: 80%;
+		height: 40%;
+		font-size:xx-large;
+		text-align:center;
+		font-family:Candara, Arial, sans;
+		border-radius:8px;
+		color:rgb(255,255,255);
+	}
+	.topleft
+	{
+		position:relative;
+		width:80%;
+		left:1px;
+	}
+	.topright
+	{
+		position:absolute;
+		top:10px;
+		width:15%;
+		height:90%;
+		right:10px;
+	}
+	.gender
+	{
+		background-color:rgba(255,150,200,.6);
+		font-size:xx-large;
+		border-radius:8px;
+		background-image:url('img/femalesign.png');
+	}
+	.gender:hover
+	{
+		background-color:rgba(0,0,255,.6);
+		background-image:url('img/malesign.png');
+	}
+</style>
+<body>
+<div class='charmenu'>
+	<br/>
+	&nbsp;
+	<div class='leftside'>
+		<div class='charasideleft pushed'>
+			<center>
+			<img src='jillcolor.png' id='character' class='pushed2 charasideimg female'/>
+			</center>
+		</div>
+		<div class='categories pushed'>
+			<center>
+			<div class='category' style="background-image:url('img/sunny.png');">
+				 <div class='categorytext'>
+					Climate
+				</div>
+			</div>
+			<div class='category' style="background-image:url('img/facey.png');">
+				 <div class='categorytext'>
+					Face
+				</div>
+			</div>
+			<div class='category' style="background-image:url('img/hairy.png');">
+				 <div class='categorytext'>
+					Hair
+				</div>
+			</div>
+			<div class='category' style="background-image:url('img/shirty.png');">
+				<div class='categorytext'>
+					Apparel
+				</div>
+			</div>
+			</center>
+		</div>
+	</div>
+	<center>
+	<div class='top1 pushed'>
+		<div class='topleft'>
+			<input type='text' class='nameinput' placeholder='Enter Character Name'></input>
+			<br/><br/>
+			<input type='text' class='farminput' placeholder='Enter Farm Name'></input>
+		</div>
+		<div class='topright gender'>
+		</div>
+	</div>
+	<div class='bottom1 pushed'>
+		<div class='category'>
+			<div class='categorytext'>
+				Desert
+			</div>
+		</div>
+		<div class='category'>
+			<div class='categorytext'>
+				Island
+			</div>
+		</div>
+		<div class='category'>
+			<div class='categorytext'>
+				Tropical
+			</div>
+		</div>
+	</div>
+	</center>
+</div>
+</body>
+</html>
